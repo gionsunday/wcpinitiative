@@ -13,7 +13,7 @@ const register = async (req, res) => {
         const verificationCode = Math.floor(100000 + Math.random() * 900000 )
         
 
-        const token = jwt.sign({name,email}, 'johnsundayjwtsecret', {expiresIn: '30m'})
+        const token = jwt.sign({name,email}, process.env.MY_SECRETE, {expiresIn: '30m'})
         
 
         var transporter = nodemailer.createTransport({
