@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
     /* --primary: #0463FA; */
-    --primary: #ff9ea7 !important;
+    --primary: #d63384 !important;
     --light: #EFF5FF;
     --dark: #1B2C51;
 }
@@ -616,7 +616,7 @@
     }
 
     50% {
-        color: #4934ff;
+        color: #d63384;
     }
 
     100% {
