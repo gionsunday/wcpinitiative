@@ -1,6 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #0463FA;
+    /* --primary: #0463FA; */
+    --primary: #ff9ea7 !important;
     --light: #EFF5FF;
     --dark: #1B2C51;
 }
@@ -104,7 +105,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -139,13 +140,16 @@
         visibility: hidden;
         transition: .5s;
     }
-    #reducer{
+
+    #reducer {
         width: 40% !important;
     }
-    #increaseer{
+
+    #increaseer {
         width: 60% !important;
         text-align: justify;
     }
+
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
         visibility: visible;
@@ -249,7 +253,7 @@
     height: 55vh;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
 }
 
@@ -287,19 +291,19 @@
         max-width: 100% !important;
     }
 
-    .feature-text  {
+    .feature-text {
         padding-left: calc(((100% - 960px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1200px) {
-    .feature-text  {
+    .feature-text {
         padding-left: calc(((100% - 1140px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1400px) {
-    .feature-text  {
+    .feature-text {
         padding-left: calc(((100% - 1320px) / 2) + .75rem);
     }
 }
@@ -401,6 +405,7 @@
 }
 
 @media (min-width: 768px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
@@ -408,6 +413,7 @@
 }
 
 @media (min-width: 992px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
@@ -436,7 +442,7 @@
 
 .testimonial-carousel .owl-item.center .testimonial-item img {
     background: var(--primary) !important;
-} 
+}
 
 .testimonial-carousel .owl-nav {
     position: absolute;
@@ -528,17 +534,15 @@
 }
 
 /* NEW CSS */
-.text-primary{
-   
-}
+.text-primary {}
 
 
 
-.col-lg-6  p{
+.col-lg-6 p {
     text-align: justify;
 }
 
-.partner{
+.partner {
     display: flex;
     justify-content: flex-end;
     flex-direction: row-reverse !important;
@@ -548,8 +552,9 @@
     background-color: white;
     box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.699)
 }
+
 @media screen and (max-width:991px) {
-    .partner{
+    .partner {
         display: flex;
         justify-content: flex-end;
         flex-direction: row-reverse !important;
@@ -558,60 +563,88 @@
     }
 }
 
-.containerr{
+.containerr {
     /* background-color: #EFF5FF!important; */
     padding: 20px 20px 20px 20px;
     border-radius: 20px;
 }
-.cursor{
+
+.cursor {
     position: relative;
     /* width: 100%; */
     /* margin: 0 auto; */
-    border-right: 2px solid rgba(255,255,255,.75);
+    border-right: 2px solid rgba(255, 255, 255, .75);
     font-size: 70px;
     /* text-align: center; */
-    white-space:nowrap;
+    white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
+    transform: translateY(-50%);
+    color: #ff9ea7;
 }
-.typewriter-animation {
-    animation: 
-      typewriter 5s steps(10) 1s 1 normal both, 
-      blinkingCursor 500ms steps(10) infinite normal;
-      animation-iteration-count: infinite;
-  }
-  @keyframes typewriter {
-    from { width: 0; }
-    to { width: 100%; }
-  }
 
-  .dimmer{
+.typewriter-animation {
+    animation:
+        typewriter 5s steps(10) 1s 1 normal both,
+        blinkingCursor 500ms steps(10) infinite normal;
+    animation-iteration-count: infinite;
+    /* color: #ff9ea7 !important; */
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+        color: #ff9ea7;
+    }
+
+    to {
+        width: 100%;
+        color: #ff9ea7 !important;
+    }
+}
+
+.dimmer {
     animation-name: dimmer;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
 
-  }
+}
 
-  @keyframes dimmer {
-    0%{
-        color: #ffffff;
+@keyframes dimmer {
+    0% {
+        color: #FFFFFF;
     }
-    50%{
-        color:navy ;
+
+    50% {
+        color: #4934ff;
     }
-    100%{
-        color: #EFF5FF;
+
+    100% {
+        color: #FFFFFF;
     }
-  }
-  #feature-icons{
-    color: #fff;
+}
+
+#feature-icons {
+    color: #d63384;
     font-size: 30px;
-  }
-  #feature-icons-blue{
-    color: #1b76ff;
+}
+
+#feature-icons-blue {
+    color: #d63384;
     font-size: 30px;
-  }
-  a{
+}
+
+a {
     color: rgba(65, 65, 65, 0.685);
-  }
+}
+
+/* .text-primary {
+    color: #0463FA !important;
+}
+.btn-primary{
+    background-color: #ff9ea7 !important;
+    border: none !important;
+} */
+ .bg-dark{
+    background-color: #d63384 !important;
+ }
