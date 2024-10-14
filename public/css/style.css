@@ -536,3 +536,78 @@
 .col-lg-6  p{
     text-align: justify;
 }
+
+.partner{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse !important;
+    width: 80%;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.699)
+}
+@media screen and (max-width:991px) {
+    .partner{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row-reverse !important;
+        width: 100% !important;
+        background-color: white;
+    }
+}
+
+.containerr{
+    /* background-color: #EFF5FF!important; */
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+}
+.cursor{
+    position: relative;
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 70px;
+    /* text-align: center; */
+    white-space:nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+.typewriter-animation {
+    animation: 
+      typewriter 5s steps(10) 1s 1 normal both, 
+      blinkingCursor 500ms steps(10) infinite normal;
+      animation-iteration-count: infinite;
+  }
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  .dimmer{
+    animation-name: dimmer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+
+  }
+
+  @keyframes dimmer {
+    0%{
+        color: #ffffff;
+    }
+    50%{
+        color:navy ;
+    }
+    100%{
+        color: #EFF5FF;
+    }
+  }
+  #feature-icons{
+    color: #fff;
+    font-size: 30px;
+  }
+  #feature-icons-blue{
+    color: #1b76ff;
+    font-size: 30px;
+  }
