@@ -611,3 +611,6 @@
     color: #1b76ff;
     font-size: 30px;
   }
+  a{
+    color: rgba(65, 65, 65, 0.685);
+  }
