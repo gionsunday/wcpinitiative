@@ -23,6 +23,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link href="../lib/animate/animate.min.css" rel="stylesheet">
     <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
@@ -32,6 +33,7 @@
 
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -271,27 +273,29 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Services</h5>
-                    <a class="btn btn-link" href="">Cardiology</a>
-                    <a class="btn btn-link" href="">Pulmonary</a>
-                    <a class="btn btn-link" href="">Neurology</a>
-                    <a class="btn btn-link" href="">Orthopedics</a>
-                    <a class="btn btn-link" href="">Laboratory</a>
+                    <a class="btn btn-link" href="../service/">Breast Cancer Screening</a>
+                    <a class="btn btn-link" href="../service/">Cervical Cancer Screening</a>
+                    <a class="btn btn-link" href="../service">Human Papillomavirus Cancer Screening</a>
+                    <a class="btn btn-link" href="../support-services">Education</a>
+                    <a class="btn btn-link" href="../support-services">Partnership</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <a class="btn btn-link" href="../about">About Us</a>
+                    <a class="btn btn-link" href="../contact">Contact Us</a>
+                    <a class="btn btn-link" href="../service">Our Services</a>
+                    <a class="btn btn-link" href="../contact">Terms & Condition</a>
+                    <a class="btn btn-link" href="../support-services">Support</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Newsletter</h5>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <p>Subscribe to get latest update from us.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" id="newsletteremail"
+                            placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2 "
+                            id="newsletterbtn">SignUp</button>
+                        <small id="newslettererror" style="color: rgb(255, 213, 221); text-align: center;"></small>
                     </div>
                 </div>
             </div>
@@ -329,6 +333,9 @@
 
     <!-- Template Javascript -->
     <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+    <script src="../js/newsletter.js"></script>
+    <script src="../js/appointment.js"></script>
 </body>
 
 </html>
