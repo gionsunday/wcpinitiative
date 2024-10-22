@@ -648,3 +648,21 @@ a {
  .bg-dark{
     background-color: #d63384 !important;
  }
+ #thisbtn{
+    animation-name: thisbtn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+ }
+
+ @keyframes thisbtn {
+      0%{
+   background-color: #1B2C51;
+      }
+      50%{
+        
+        background-color: #d63384;
+      }
+      100%{
+        background-color: #1B2C51;
+      }
+ }
