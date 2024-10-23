@@ -657,12 +657,15 @@ a {
  @keyframes thisbtn {
       0%{
    background-color: #1B2C51;
+   transform: scale(1);
       }
       50%{
         
         background-color: #d63384;
+        transform: scale(1.5);
       }
       100%{
         background-color: #1B2C51;
+        transform: scale(1);
       }
  }

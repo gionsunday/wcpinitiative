@@ -57,12 +57,12 @@ window.addEventListener("load", () =>{
         randomNumber1 = Math.floor(Math.random() * 10)
         randomNumber2 = Math.floor(Math.random() * 10)
 
-        console.log(randomNumber1, randomNumber2)
+      //   console.log(randomNumber1, randomNumber2)
 
         imgHolder01.src = imgageArrays01[randomNumber1]
         imgHolder02.src = imgageArrays02[randomNumber2]
 
-        console.log(imgageArrays[randomNumber1], imgageArrays[randomNumber2])
+      //   console.log(imgageArrays[randomNumber1], imgageArrays[randomNumber2])
      }, 3000);
      
    
