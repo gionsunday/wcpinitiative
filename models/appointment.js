@@ -10,14 +10,40 @@ const AppointmentSchema = new mongoose.Schema(
       trim: true,
       minlength: 3,
       required: [true, "please provide an name"],
-      maxlength: [20, "name must not be greater than 20 characters"],
     },
     email: {
       type: String,
-      unique: true,
+
       trim: true,
       required: [true, "please provide an email"],
-      maxlength: [50, "name must not be greater than 20 characters"],
+    },
+    phone: {
+      type: String,
+
+      trim: true,
+      required: [true, "please provide an email"],
+    },
+    theTime: {
+      type: String,
+
+      trim: true,
+      required: [true, "please provide time"],
+    },
+    theDate: {
+      type: String,
+
+      trim: true,
+      required: [true, "please provide date"],
+    },
+    topic: {
+      type: String,
+      trim: true,
+      required: [true, "please provide service"],
+    },
+    message: {
+      type: String,
+      trim: true,
+      required: [true, "please provide message"],
     },
   },
   { timestamps: true }
