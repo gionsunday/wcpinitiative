@@ -7,7 +7,7 @@ const { StatusCodes } = require("http-status-codes");
 
 const appointment = async (req, res) => {
     const {name, email, phone, topic, theDate, theTime, message} = req.body
-    console.log(req.body)
+    // console.log(req.body)
   const appointment = await Appointment.create({...req.body });
  
 

@@ -9,12 +9,13 @@ const newsLetter = async (req, res) => {
   const { name, email, subject, message } = req.body;
 
   const emailCheck = await NewLetter.find({email:email})
-  console.log(emailCheck);
-  if(emailCheck){
+  // console.log(emailCheck);
+  if(!emailCheck.length == 0){
     res.send({maessage: "EMAIL HAS BEEN REGISTERED!"})
   }
   else{
-  const newsletter = await NewLetter.create({ ...req.body });
+  const newsletter = await NewLetter.create(req.body);
+  // console.log(newsletter)
 
   var transporter = nodemailer.createTransport({
     service: process.env.E_NEWSERVER,

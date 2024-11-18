@@ -7,7 +7,7 @@ const { StatusCodes } = require("http-status-codes");
 
 const contact = async (req, res) => {
     const {name, email, subject, message} = req.body
-    console.log(req.body)
+    // console.log(req.body)
   const contact = await Contact.create({...req.body });
  
 
