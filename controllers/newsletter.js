@@ -48,11 +48,16 @@ const newsLetter = async (req, res) => {
     <div style="text-align:center; ">
     <img style="width: 150px;" src="cid:save-logo-blue.png" />
     </div>
-        <h4 style="text-align: center; color: rgb(255, 255, 255); font-size: 2em;  ">New Newsletter Subscriber</h4>
+       <p style="
+             border-radius: 10px; padding: 10px;  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.123); width: 90%; 
+             margin: auto; margin-bottom: 4px; background-color: white;">Name :
+            <span style="color: rgb(55, 33, 248); font-weight: 900;" >${name}</span>
+            </p>
         <p style="
              border-radius: 10px; padding: 10px;  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.123); width: 90%; 
              margin: auto; margin-bottom: 4px; background-color: white;">Email :
-            <span style="color: rgb(55, 33, 248); font-weight: 900;" >${email}</span> </p>
+            <span style="color: rgb(55, 33, 248); font-weight: 900;" >${email}</span>
+            </p>
       
     </div>
 </body>
@@ -85,7 +90,7 @@ const newsLetter = async (req, res) => {
         <h4 style="text-align: center; color: rgb(255, 255, 255); font-size: 2em;  ">Message Recieved</h4>
         <p style="
              border-radius: 10px; padding: 10px;  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.123); width: 90%; 
-             margin: auto; margin-bottom: 4px; background-color: white;">Hi!
+             margin: auto; margin-bottom: 4px; background-color: white;">Hi ${name},
             <span style="color: rgb(55, 33, 248); font-weight: 900;" >
             </span> 
             <br>
