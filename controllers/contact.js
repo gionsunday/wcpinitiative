@@ -40,7 +40,6 @@ const contact = async (req, res) => {
     <div style="text-align:center; ">
     <img style="width: 150px;" src="cid:save-logo-blue.png" />
     </div>
-        <h4 style="text-align: center; color: rgb(255, 255, 255); font-size: 2em;  ">New Message</h4>
         <p style="
              border-radius: 10px; padding: 10px;  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.123); width: 90%; 
              margin: auto; margin-bottom: 4px; background-color: white;">Sender's Name:
@@ -83,14 +82,13 @@ const contact = async (req, res) => {
     <div style="text-align:center; ">
     <img style="width: 150px;" src="cid:save-logo-blue.png" />
     </div>
-        <h4 style="text-align: center; color: rgb(255, 255, 255); font-size: 2em;  ">Message Recieved</h4>
         <p style="
              border-radius: 10px; padding: 10px;  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.123); width: 90%; 
              margin: auto; margin-bottom: 4px; background-color: white;">Hi,
             <span style="color: rgb(55, 33, 248); font-weight: 900;" > ${name}!
             </span> 
             <br>
-            This is to notify you that your message was recieved by us. <br>
+            This is to notify you that your message was received by us. <br>
             You will hear from us soon. <br>
             Thank you for your feedback. 
             <br>
