@@ -8,13 +8,13 @@ const { StatusCodes } = require("http-status-codes");
 const newsLetter = async (req, res) => {
   const { name, email, subject, message } = req.body;
 
-  const emailCheck = await NewLetter.find({email:email})
+  const emailCheck = await Newsletter.find({email:email})
   // console.log(emailCheck);
   if(!emailCheck.length == 0){
     res.send({maessage: "EMAIL HAS BEEN REGISTERED!"})
   }
   else{
-  const newsletter = await NewLetter.create(req.body);
+  const newsletter = await Newsletter.create(req.body);
   // console.log(newsletter)
 
   var transporter = nodemailer.createTransport({
@@ -100,7 +100,7 @@ const newsLetter = async (req, res) => {
             <br>
             <br>
 
-            Thank you for yor support. 
+            Thank you for your support. 
             <br>
             <br>
 
