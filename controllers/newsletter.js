@@ -1,4 +1,4 @@
-const NewLetter = require("../models/newsletter");
+const Newsletter = require("../models/newsletter");
 require("dotenv").config();
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
