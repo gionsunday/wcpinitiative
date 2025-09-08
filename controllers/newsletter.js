@@ -5,6 +5,8 @@ const bcrypt = require("bcryptjs");
 const nodemailer = require("nodemailer");
 const { StatusCodes } = require("http-status-codes");
 
+const currentYear = new Date().getFullYear();
+
 const newsLetter = async (req, res) => {
   const { name, email, subject, message } = req.body;
 
@@ -32,35 +34,116 @@ const newsLetter = async (req, res) => {
     subject: `New Subscriber`,
     attachments: [
       {
-        filename: "logo-blue.png",
-        path: __dirname + "/logo-blue.png",
-        cid: "save-logo-blue.png",
+        filename: "logo.png",
+        path: __dirname + "/logo.png",
+        cid: "save-logo.png",
       },
     ],
-    html: `
-     <body style="background-color: rgba(253, 222, 232, 0.048); width: 100%;" >
+     html: `
+     
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Account Activated</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            color: #444444;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+          }
+          .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          }
+          @media (prefers-color-scheme: dark) {
+            body {
+              background-color: #1c1c1c;
+              color: #cccccc;
+            }
+            .email-container {
+              background-color: #2b2b2b;
+              border-color: #444444;
+            }
+          }
+          .header {
+            text-align: center;
+            color: #db2777;
+            font-size: 24px;
+            margin-bottom: 20px;
+          }
+          @media (prefers-color-scheme: dark) {
+            .header {
+              color: #72b4ff;
+            }
+          }
+          .button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 12px 25px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #db2777;
+            text-decoration: none;
+            border-radius: 5px;
+          }
+          .button:visited{
+          color:#ffffff;
+          }
+          .button:hover {
+            background-color: #db2777;
+          }
+          
+           @media (prefers-color-scheme: dark) {
+           .button {
+            color: #ffffff;
+            background-color: #db2777;
+            }
+          }
+          .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #888888;
+          }
+          @media (prefers-color-scheme: dark) {
+            .footer {
+              color: #666666;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <div class="email-container">
+          <div class="header" style="display: flex; justify-content: center; flex-direction: column;">
+            <div style="width: 100%;">
 
-    <div  style="  height: 100%; padding: .5em .5em 4em .5em; border-radius:10px;
-    margin-top: 70px !important;
-    background-color: #d63384; width: 100%; margin: auto; position: relative; text-align:left; 
-    font-size: 1.5em; word-wrap: break-word;">
-
-    <div style="text-align:center; ">
-    <img style="width: 150px;" src="cid:save-logo-blue.png" />
-    </div>
-       <p style="
-             border-radius: 10px; padding: 10px;  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.123); width: 90%; 
-             margin: auto; margin-bottom: 4px; background-color: white;">Name :
-            <span style="color: rgb(55, 33, 248); font-weight: 900;" >${name}</span>
-            </p>
-        <p style="
-             border-radius: 10px; padding: 10px;  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.123); width: 90%; 
-             margin: auto; margin-bottom: 4px; background-color: white;">Email :
-            <span style="color: rgb(55, 33, 248); font-weight: 900;" >${email}</span>
-            </p>
-      
-    </div>
-</body>
+    <img style="width: 100px;" src="cid:save-logo.png" />
+            </div>
+            New Subscriber
+          </div>
+          // <p>From: ${name} ,</p>
+          // <p>Subject: ${subject}</p>
+          <p> Subscriber: ${email} </p>
+          
+          <p style="text-align: center;">
+            <a style="color:#fff" href="https://wcpinitiative.org/" class="button">Goto Website</a>
+          </p>
+          <div class="footer">
+            &copy; ${currentYear} Women’s Cancer Prevention Initiative . <br> All rights reserved.  
+          </div>
+        </div>
+      </body>
+      </html>
+    
       
     `,
   };
@@ -71,46 +154,130 @@ const newsLetter = async (req, res) => {
     subject: `You Subscribed!`,
     attachments: [
       {
-        filename: "logo-blue.png",
-        path: __dirname + "/logo-blue.png",
-        cid: "save-logo-blue.png",
+        filename: "logo.png",
+        path: __dirname + "/logo.png",
+        cid: "save-logo.png",
       },
     ],
     html: `
-     <body style="background-color: rgba(253, 222, 232, 0.048); width: 100%;" >
-
-    <div  style="  height: 100%; padding: .5em .5em 4em .5em; border-radius:10px;
-    margin-top: 70px !important;
-    background-color: #d63384; width: 100%; margin: auto; position: relative; text-align:left; 
-    font-size: 1.5em; word-wrap: break-word;">
-
-    <div style="text-align:center; ">
-    <img style="width: 150px;" src="cid:save-logo-blue.png" />
-    </div>
-        <h4 style="text-align: center; color: rgb(255, 255, 255); font-size: 2em;  ">Message Recieved</h4>
-        <p style="
-             border-radius: 10px; padding: 10px;  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.123); width: 90%; 
-             margin: auto; margin-bottom: 4px; background-color: white;">Hi ${name},
-            <span style="color: rgb(55, 33, 248); font-weight: 900;" >
-            </span> 
-            <br>
-            You have successfully subscribed to our weekly newsletter.
-            <br>
-            Stay tuned as we bring you stunning updates on our events.
-            <br>
-            <br>
-
-            Thank you for your support. 
-            <br>
-            <br>
-
-            -Admin
-            WCPInitiative. 
-            </p>
      
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Account Activated</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            color: #444444;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+          }
+          .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          }
+          @media (prefers-color-scheme: dark) {
+            body {
+              background-color: #1c1c1c;
+              color: #cccccc;
+            }
+            .email-container {
+              background-color: #2b2b2b;
+              border-color: #444444;
+            }
+          }
+          .header {
+            text-align: center;
+            color: #db2777;
+            font-size: 24px;
+            margin-bottom: 20px;
+          }
+          @media (prefers-color-scheme: dark) {
+            .header {
+              color: #72b4ff;
+            }
+          }
+          .button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 12px 25px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #db2777;
+            text-decoration: none;
+            border-radius: 5px;
+          }
+          .button:visited{
+          color:#ffffff;
+          }
+          .button:hover {
+            background-color: #db2777;
+          }
+          
+           @media (prefers-color-scheme: dark) {
+           .button {
+            color: #ffffff;
+            background-color: #db2777;
+            }
+          }
+          .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #888888;
+          }
+          @media (prefers-color-scheme: dark) {
+            .footer {
+              color: #666666;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <div class="email-container">
+          <div class="header" style="display: flex; justify-content: center; flex-direction: column;">
+            <div style="width: 100%;">
+
+         
+    <img style="width: 100px;" src="cid:save-logo.png" />
+            </div>
+           Welcome!
+          </div>
+          <p>Hello ${name} ,</p>
+          <p>Thank you for subscribing to updates from the <strong> Women’s Cancer Prevention Initiative (WCPI). </strong> We’re excited to have you as part of our growing community.</p>
+           <p>By joining us, you’ll receive updates on:</p>
+    <ul>
+      <li>
+        Cancer prevention tips and educational resources
+      </li>
+        <li>
+     Screening programs and outreach activities
+      </li>
+        <li>
+        Ways you can support and get involved
+      </li>
+    </ul>
+    <p>Together, we can make early detection and prevention accessible to more women and families.</p>
+    <p style="text-align: center;">
+      <a style="color:#fff" href="https://wcpinitiative.org/" class="button">Goto Website</a>
+    </p>
+    <p>Please contact us directly at <a href="mailto:info@wcpinitiative.org"
+        style="color: #0056b3;">info@wcpinitiative.org</a>.</p>
+    <div class="footer">
+      &copy; ${currentYear} Women’s Cancer Prevention Initiative . <br> All rights reserved.
     </div>
-</body>
-      
+        </div>
+      </body>
+      </html>
+    
     `,
   };
 
