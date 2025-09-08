@@ -27,9 +27,9 @@ const contact = async (req, res) => {
     to: process.env.NEW_E,
     subject: `New message from ${name}`,
     attachments: [{
-        filename: 'logo.png',
-        path: __dirname + '/logo.png',
-        cid: 'save-logo.png'
+        filename: 'logo-bla.png',
+        path: __dirname + '/logo-bla.png',
+        cid: 'save-logo-bla.png'
       }],
     html: `
      
@@ -118,9 +118,10 @@ const contact = async (req, res) => {
           <div class="header" style="display: flex; justify-content: center; flex-direction: column;">
             <div style="width: 100%;">
 
-    <img style="width: 100px;" src="cid:save-logo.png" />
+    <img style="width: 100px;" src="cid:save-logo-bla.png" />
             </div>
-            New message
+            <div style="width: 100%;"> New message </div>
+            
           </div>
           <p>From: ${name} ,</p>
           <p>Subject: ${subject}</p>
@@ -144,9 +145,9 @@ const contact = async (req, res) => {
     to: email,
     subject: `Your Message ${name}` ,
     attachments: [{
-        filename: 'logo.png',
-        path: __dirname + '/logo.png',
-        cid: 'save-logo.png'
+        filename: 'logo-bla.png',
+        path: __dirname + '/logo-bla.png',
+        cid: 'save-logo-bla.png'
       }],
     html: `
    <html lang="en">
@@ -234,9 +235,11 @@ const contact = async (req, res) => {
           <div class="header" style="display: flex; justify-content: center; flex-direction: column;">
             <div style="width: 100%;">
           
-    <img style="width: 100px;" src="cid:save-logo.png" />
+    <img style="width: 100px;" src="cid:save-logo-bla.png" />
             </div>
-            Message Received!
+            <div style="width: 100%;"> 
+            Message Received! 
+            </div>
           </div>
           <p>Hello ${name} ,</p>
           <p>Thank you for reaching out to the <strong>  Women’s Cancer Prevention Initiative (WCPI). </strong> Your message has been received, and a member of our team will respond to you shortly.</p>
