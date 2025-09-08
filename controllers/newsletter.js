@@ -34,9 +34,9 @@ const newsLetter = async (req, res) => {
     subject: `New Subscriber`,
     attachments: [
       {
-        filename: "logo.png",
-        path: __dirname + "/logo.png",
-        cid: "save-logo.png",
+        filename: "logo-bla.png",
+        path: __dirname + "/logo-bla.png",
+        cid: "save-logo-bla.png",
       },
     ],
      html: `
@@ -126,9 +126,12 @@ const newsLetter = async (req, res) => {
           <div class="header" style="display: flex; justify-content: center; flex-direction: column;">
             <div style="width: 100%;">
 
-    <img style="width: 100px;" src="cid:save-logo.png" />
+    <img style="width: 100px;" src="cid:save-logo-bla.png" />
             </div>
+            <div>
+            
             New Subscriber
+            </div>
           </div>
           // <p>From: ${name} ,</p>
           // <p>Subject: ${subject}</p>
@@ -154,9 +157,9 @@ const newsLetter = async (req, res) => {
     subject: `You Subscribed!`,
     attachments: [
       {
-        filename: "logo.png",
-        path: __dirname + "/logo.png",
-        cid: "save-logo.png",
+        filename: "logo-bla.png",
+        path: __dirname + "/logo-bla.png",
+        cid: "save-logo-bla.png",
       },
     ],
     html: `
@@ -247,9 +250,12 @@ const newsLetter = async (req, res) => {
             <div style="width: 100%;">
 
          
-    <img style="width: 100px;" src="cid:save-logo.png" />
+    <img style="width: 100px;" src="cid:save-logo-bla.png" />
             </div>
+            <div> 
            Welcome!
+           </div>
+           
           </div>
           <p>Hello ${name} ,</p>
           <p>Thank you for subscribing to updates from the <strong> Women’s Cancer Prevention Initiative (WCPI). </strong> We’re excited to have you as part of our growing community.</p>
