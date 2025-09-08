@@ -123,12 +123,12 @@ const newsLetter = async (req, res) => {
       </head>
       <body>
         <div class="email-container">
-          <div class="header" style="display: flex; justify-content: center; flex-direction: column;">
+          <div class="header" style="">
             <div style="width: 100%;">
 
     <img style="width: 100px;" src="cid:save-logo-bla.png" />
             </div>
-            <div>
+            <div style="width: 100%;">
             
             New Subscriber
             </div>
@@ -246,13 +246,13 @@ const newsLetter = async (req, res) => {
       </head>
       <body>
         <div class="email-container">
-          <div class="header" style="display: flex; justify-content: center; flex-direction: column;">
+          <div class="header" style="">
             <div style="width: 100%;">
 
          
     <img style="width: 100px;" src="cid:save-logo-bla.png" />
             </div>
-            <div> 
+            <div style="width: 100%;"> 
            Welcome!
            </div>
            
