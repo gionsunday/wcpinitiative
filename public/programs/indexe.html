@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WCPI - Education & Programs</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9fb;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background-color: #e91e63;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid #f8bbd0;
+      display: inline-block;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      padding: 1.5rem;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      color: #e91e63;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #f8bbd0; /* Light underline */
+      display: inline-block;
+    }
+
+    .card p {
+      margin: 0.5rem 0;
+    }
+
+    .highlight-80,
+    .highlight-3years,
+    .highlight-age9,
+    .highlight-age14 {
+      color: #e91e63;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>WCPI Programs and Outreach</h1>
+  </header>
+
+  <main class="container">
+
+    <section class="card education-outreach">
+      <h2>Education and Outreach</h2>
+      <p>Lack of health awareness and education are major factors behind high mortality rates from breast and cervical cancer.</p>
+      <p>WCPI collaborates with healthcare providers, faith-based groups, and community leaders to increase awareness with culturally appropriate messages, currently focused in Remo North, Ogun State.</p>
+    </section>
+
+    <section class="card capacity-development">
+      <h2>Capacity Development</h2>
+      <p>We offer training for local nurses and community health workers to improve screening and early detection.</p>
+      <p>Our collaboration with Project ECHO helps deliver shared cancer education and training for underserved areas in Nigeria.</p>
+    </section>
+
+    <section class="card screening-detection">
+      <h2>Cancer Screening & Detection</h2>
+      <p>We provide safe, effective, and free cervical cancer screening and treatment of pre-cancerous lesions in Remo North Local Government in Ogun State. It also comes with clinical breast examinations while teaching women how to conduct self-breast examinations regularly.</p>
+      <p>Our goal is to screen <span class="highlight-80">80%</span> of eligible women in the local government area within <span class="highlight-3years">3</span> years.</p>
+    </section>
+
+    <section class="card hpv-advocacy">
+      <h2>HPV Vaccination Advocacy</h2>
+      <p>Vaccination of girls between the ages of <span class="highlight-age9">9</span> and <span class="highlight-age14">14</span> years is known to be effective, yet only a small proportion of girls in Nigeria have been vaccinated against this highly preventable cancer.</p>
+      <p>WCPI, in partnership with a local academic group, is advocating for HPV vaccination to contribute to the WHO's goals for the eradication of cervical cancer.</p>
+    </section>
+
+  </main>
+
+ 
+
+</body>
+</html>

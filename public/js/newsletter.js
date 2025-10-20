@@ -2,7 +2,11 @@ window.addEventListener("load", () => {
   const newsletterBtn = document.querySelector("#newsletterbtn");
   const newserror = document.querySelector("#newslettererror")
 
+  const newsletterBtn2 = document.querySelector("#newsletterbtn2");
+
+  const thisBtn = document.querySelector(".thisBtn");
   const emailInput = document.querySelector("#newsletteremail");
+  const nameInput = document.querySelector("#newslettername");
 
   newsletterBtn.addEventListener("click", async (e) => {
     e.preventDefault();
@@ -13,17 +17,19 @@ window.addEventListener("load", () => {
       newserror.textContent = "Please enter a valid email!"
     } else {
       newsletterBtn.textContent = "Subscribing...";
-      
       emailInput.style.border = "none"
-      
+
       try {
         const data = await axios.post("/wcpi/api/newsletter", {
           email: emailInput.value,
+          name: nameInput.value || "There"
         });
 
         newsletterBtn.textContent = "Subscribed!";
-        console.log(data);
+        newsletterBtn.textContent = "Thank you!";
+        // console.log(data);
         emailInput.value = "";
+        nameInput.value = ""
         newserror.textContent = data.data.maessage
 
         setInterval(() => {
@@ -34,5 +40,15 @@ window.addEventListener("load", () => {
         console.log(error);
       }
     }
+  });
+
+  newsletterBtn2.addEventListener("click", async (e) => {
+    e.preventDefault(); 
+    alert("Button 2 clicked!");
+  });
+
+  thisBtn.addEventListener("click", async (e) => {
+    e.preventDefault(); 
+    alert("This Button clicked!");
   });
 });

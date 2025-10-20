@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Women Cancer Prevention Initiative</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../css/new.css"> -->
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>62, Adebola Street, Surulere,Lagos, Lagos, Nigeria</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="fa fa-envelope text-primary me-2"></small>
+                    <small> <a href="mailto:info@wcpinitiative.org">info@wcpinitiative.org</a></small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-square text-primary me-2"></small>
+                    <small> <a href="tel:+2349054667181">+234 905 466 7181</a></small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
+                        href="https://www.facebook.com/profile.php?id=61566401709403"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
+                        href=" https://x.com/Yemanjaci"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0"
+                        href="https://www.instagram.com/yemanjacancercareinitiative"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="../" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0 text-primary">
+                <img src="../img/icons/logo.png" style="width: 60px; " alt="logo" srcset="">
+                <small> WCPInitiative</small>
+            </h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="../" class="nav-item nav-link">Home</a>
+                <a href="./index.html" class="nav-item nav-link active">About</a>
+                <a href="../service" class="nav-item nav-link">Service</a>
+                <a href="../gallery" class="nav-item nav-link">Gallery</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="../programs" class="dropdown-item">Program Initiative</a>
+                        <a href="../support-services" class="dropdown-item">Support Services</a>
+                        <a href="../appointment" class="dropdown-item">Appointment</a>
+                        <a href="../testimonial" class="dropdown-item">Testimonial</a>
+                        <a href="../blog_news" class="dropdown-item">Blog & News</a>
+                    </div>
+                </div>
+                <a href="../contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="../appointment" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Appointment<i
+                    class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+
+    <div class="container">
+        <video autoplay muted loop width="100%" height="70%">
+            <source src="../video/Breast Cancer Motion Graphic.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Page Header Start -->
+    <!-- <div class="container-fluid page-headerr py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <video loop controls autoplay >
+            <source src="../video/Breast Cancer Motion Graphic.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown" id="about">About Us</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+             
+                <ol class="breadcrumb text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">About</li>
+                </ol> -
+            </nav>
+        </div> 
+    </div>
+     Page Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid rounded w-75 align-self-end" src="../img/aboout.jpg" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="../img/hero-01.jpg" alt=""
+                            style="margin-top: -25%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">About Us</p>
+                    <h1 class="mb-4">Who We Are? Get Know About Us!</h1>
+                    <p>
+                        We are a nonprofit organization dedicated to improving access to early diagnosis and prevention
+                        of women's cancers in Nigeria.
+                        <br> Providing Early Diagnosis and Prevention for Women's Cancers
+
+                    </p>
+                    <p class="mb-4">
+                        At Women Cancer Prevention Initiative, our mission is to save the lives of women through
+                        screening and early diagnosis of breast and cervical cancer. To this end, we engage in outreach
+                        efforts to increase community awareness of these cancers, train local healthcare workers,
+                        advocate for Human Papillomavirus (HPV) vaccination, and partner with the community leadership,
+                        local organizations, and healthcare providers to conduct cancer screening programs.
+                    </p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Quality healthcare services</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Only Qualified Doctors and Personnel</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Medical Research Professionals
+                    </p>
+                    <!-- <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="./about/">Read More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">There is More</p>
+                        <h1 class="text-white mb-4">Who We Are?</h1>
+                        <p class="text-white mb-4 pb-2" style="text-align: justify;">
+                            Women Cancer Prevention Initiative is a US IRS-designated 501c3 nonprofit organization
+                            focused on saving the lives of women and reducing the burden of advanced breast and cervical
+                            cancer in sub-Saharan Africa. Our connections with the local communities, our collective
+                            expertise in women's cancers, public health and international development combined with a
+                            deep commitment to alleviate the burden of these two diseases are the driving forces behind
+                            our organization.
+                        </p>
+                        <p class="text-white mb-4 pb-2" style="text-align: justify;">
+                            Cancer accounts for an increasing proportion of non-communicable diseases (NCDs) worldwide.
+                            Underserved populations in countries like Nigeria, where death rates for female breast and
+                            cervical cancers are among the highest, are disproportionately burdened by these diseases.
+                        </p>
+                        <!-- <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                        style="width: 55px; height: 55px;">
+                                        <i class="fa fa-user-md text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Experience</p>
+                                        <h5 class="text-white mb-0">Doctors</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                        style="width: 55px; height: 55px;">
+                                        <i class="fa fa-check text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Quality</p>
+                                        <h5 class="text-white mb-0">Services</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                        style="width: 55px; height: 55px;">
+                                        <i class="fa fa-comment-medical text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Positive</p>
+                                        <h5 class="text-white mb-0">Consultation</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                        style="width: 55px; height: 55px;">
+                                        <i class="fa fa-headphones text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">24 Hours</p>
+                                        <h5 class="text-white mb-0">Support</h5>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>-->
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="../img/programs.jpg"
+                            style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s"
+                    style="box-shadow: 4px 0px 1px rgb(255, 255, 255);">
+                    <div class="p-lg-5 ps-lg-0">
+                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">There Is More</p>
+                        <h1 class="text-white mb-4">Mission</h1>
+                        <p class="text-white mb-4 pb-2" style="text-align: justify;">
+                            Women Cancer Prevention Initiative’s mission is to save the lives of women through screening
+                            and early diagnosis of breast and cervical cancer, to prevent the development of advanced
+                            stages of these two diseases. We achieve this by establishing partnerships with local
+                            governments, community groups, and public and private hospitals and clinics to empower women
+                            in the fight against cancer.
+                        </p>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 feature-text py-5  wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">There Is More</p>
+                        <h1 class="text-white mb-4">Vision</h1>
+                        <p class="text-white mb-4 pb-2" style="text-align: justify;">
+                            Our vision is a world where every woman has access to life-saving services
+                            for the prevention of cervical cancer and timely diagnosis of breast cancer.
+                            To this end, we support the education and increased awareness
+                            of these cancers in women and their communities as well as providing support
+                            for screening and early detection </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" id="reducer">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid rounded w-75 align-self-end" src="../img/profiles/founder.jpg" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="../img/profiles/founder-1.jpg"
+                            alt="" style="margin-top: -25%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" id="increaseer">
+                    <p class="d-inline-block border rounded-pill py-1 px-4 text-primary">President and Founder</p>
+                    <h1 class="mb-4">Toyin Shonukan, MD, MPH</h1>
+                    <p class="">Dr. Shonukan is a US board-certified Hematologist and Oncologist with extensive
+                        experience
+                        in global clinical research, therapeutic development, and Public Health.</p>
+                    <p class="">
+                        After graduating from Medical School in Nigeria, she completed her post-graduate training
+                        while serving the local communities at Columbia University and New York University. She
+                        continued to provide medical care at Indian Reservations in the Dakotas and at St. Francis
+                        Hospital in Zambia.
+                    </p>
+                    <p class="">Upon returning to the US, she took on increasingly senior teaching responsibilities at
+                        SUNY, Cornell University, and the University of Miami.
+                        Joining international pharmaceutical companies such as Novartis, Takeda, and E. Lilly, she
+                        led multi-disciplinary teams that advanced clinical development programs targeting breast
+                        cancer, lymphoma, beta-thalassemia, Sickle Cell Disease, and others. Additionally, her
+                        research has been published in peer-reviewed journals.</p>
+                    <p>While completing a Master’s degree in Public Health from Boston University, she
+                        investigated opportunities to enhance women’s cancer care in Nigeria. </p>
+                    <p>This reflection and her diverse experience have culminated in the founding of the Yemanja
+                        Cancer Care Initiative, whose aim is to reduce the disproportionate burden of cancers
+                        affecting women in underserved populations, through health education, screening, and
+                        scientific research.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Start -->
+    <!--      
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Directors</p>
+                <h1>Our Esteem Board Of Directors</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="../img/profiles/jimi.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Olujimi Akindele <br> Esq.</h5>
+                            <p class="text-primary">Board Member</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href="https://linkedin.com/in/olujimi-akindele-6954bb16"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="../img/profiles/khandan.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Khandan Baradaran <br> PhD.</h5>
+                            <p class="text-primary">Board Member</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href="https://linkedin.com/in/khandan-baradaran-8641277"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="../img/profiles/patrick.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Patrick Haslett <br> MD.</h5>
+                            <p class="text-primary">Board Member</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="../img/profiles/philippe.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Philippe Samama<br> PhD. </h5>
+                            <p class="text-primary">Board Member</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href="https://linkedin.com/in/olujimi-akindele-6954bb16"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+    <!-- 
+    <div class="container-xxl py-5 owl-carousel header-carousel">
+        <div class="container containerr owl-carousel-item position-relative">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" id="reducer">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid rounded w-75 align-self-end" src="../img/profiles/jimi.jpg" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="../img/profiles/jimi-1.jpeg" alt=""
+                            style="margin-top: -25%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" id="increaseer">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Board Member</p>
+                    <h1 class="mb-4">Olujimi Akindele Esq</h1>
+                    <p>Olujimi “Jimi” Akindele Esq is a legal and financial consultant with international
+                        experience in New York, Dar es Salaam Paris and Nairobi, working with diverse organizations
+                        including Fortune 500 companies, large research institutions, startups, inventors,
+                        non-profits, international donors, development finance institutions, utility companies, and
+                        governments.</p>
+                    <p>Mr. Akindele is a clean energy and climate finance professional working to extend access to
+                        finance, as well as climate adaptation and mitigation interventions in rural Africa. Jimi
+                        has also leveraged his background in life sciences to support the patent portfolio
+                        management of international biotech, pharmaceutical companies, and research science
+                        institutions.</p>
+                    <p>Jimi graduated with a BA in Philosophy and a BS in Biology from Stanford University in
+                        2005. In 2009, he earned his JD from Fordham University School of Law.</p>
+                    <p>Jimi has also accrued certifications from the Frankfurt School of Business and the
+                        University of Pennsylvania Wharton School of Business in Climate and Renewable Energy
+                        Finance and Asset Management, respectively. Jimi is admitted to the New York State Bar.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container owl-carousel-item position-relative">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" id="reducer">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid rounded w-75 align-self-end" src="../img/profiles/khandan.jpg" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="../img/profiles/khandan-1.jpeg"
+                            alt="" style="margin-top: -25%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" id="increaseer">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Board Member</p>
+                    <h1 class="mb-4">Khandan Baradaran PhD</h1>
+                    <p>Khandan Baradaran, Ph.D. has 25 years of experience in the pharmaceutical industry,
+                        including positions in regulatory affairs, quality control, and quality assurance.&nbsp;</p>
+                    <p>She is currently Vice President of Regulatory CMC at Ultragenyx Pharmaceutical. Dr.
+                        Baradaran received her B.A. degree in molecular biology from Wellesley College and her Ph.D.
+                        in virology from Harvard University.</p>
+                    <p>Dr. Baradaran’s interests include sponsorship of more than 20 women in Afghanistan, the
+                        DRG, and Nigeria to improve health and economic standing through education via Women for
+                        Women International. She has also served as a volunteer and team lead on the Healthcare
+                        Businesswomen’s Association for over 10 years.</p>
+                    <p>In addition to Yemanja, Dr. Baradaran is currently serving a 3-year term on the Addgene
+                        Board of Directors.</p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container owl-carousel-item position-relative">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" id="reducer">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid rounded w-75 align-self-end" src="../img/profiles/patrick.jpg" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="../img/profiles/patrick.jpg" alt=""
+                            style="margin-top: -25%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" id="increaseer">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Board Member</p>
+                    <h1 class="mb-4">Patrick Haslett MD</h1>
+                    <p>Patrick Haslett trained in internal medicine, infectious diseases, and immunology in the UK
+                        and USA. He spent the first part of his career practicing general medicine in rural
+                        Zambia.</p>
+                    <p>Subsequently, he was engaged in research into the immunology of infectious diseases at NYU
+                        Medical Center and Rockefeller University in NYC, with a focus on HIV and mycobacterial
+                        infection.</p>
+                    <p>Most recently, he has spent over 15 years in the biotechnology industry, directing both
+                        preclinical and clinical research efforts in a wide range of genetic, metabolic, and
+                        immunologic diseases.</p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container owl-carousel-item position-relative">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" id="reducer">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid rounded w-75 align-self-end" src="../img/profiles/philippe.jpg" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="../img/profiles/philippe.jpg" alt=""
+                            style="margin-top: -25%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" id="increaseer">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Board Member</p>
+                    <h1 class="mb-4">Patrick Haslett MD</h1>
+                    <p>
+                        Philippe leads the New Product Strategy & Planning function at Sangamo Therapeutics,
+                        a developer of Cell and Gene Therapies. In prior roles,
+                        he directed various commercialization activities in such pharmaceutical companies as Shire,
+                        Roche, and Takeda.
+                    </p>
+                    <p>
+                        He has helped advance several therapeutic programs directed at solid tumors and hematological
+                        malignancies. He holds a Ph.D. from the Université Pierre & Marie Curie and an MBA from New York
+                        University.
+                    </p>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+ -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s"
+                    style="box-shadow: 4px 0px 1px rgb(255, 255, 255);">
+                    <div class="p-lg-5 ps-lg-0">
+                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">There Is More</p>
+                        <h1 class="text-white mb-4">WCPI</h1>
+                        <p class="text-white mb-4 pb-2" style="text-align: justify;">
+                            Women Cancer Prevention Initiative's goals are aligned with the UN Sustainable
+                            Development Goals (September 2015): Goal 3, target 3.4:By 2030, reduce by one-third
+                            premature mortality from noncommunicable diseases through prevention and treatment and
+                            promote mental health and well-being. </p>
+                        <p class="text-white mb-4 pb-2" style="text-align: justify;">
+                            Cancer accounts for an increasing proportion of non-communicable diseases (“NCDs”) in the
+                            world, and Cancer accounts for an increasing proportion of non-communicable diseases
+                            (“NCDs”) in the world, and underserved populations in countries like Nigeria
+                            where death rates for female breast and cervical cancers are the highest, are
+                            disproportionately burdened from these diseases. </p>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 feature-text py-5  wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">We are not alone</p>
+                        <h1 class="text-white   mb-4">Our Partners</h1>
+                        <p class="text-white mb-4 pb-2" style="text-align: justify;"></p>
+
+                        <div class="partner">
+                            <img src="../img/echo.png" alt="" srcset="" style="width: 160px;">
+                            <img src="../img/ogun.png" alt="" srcset="" style="width: 160px;">
+                        </div>
+
+
+                    </div>
+                </div>
+                <p class="text-center text-white px-4" style="padding: 10px 20px 10px 20px; width: 80%; margin: auto;">
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>62, Adebola Street, Surulere,Lagos, Lagos,
+                        Nigeria</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i> <a href="tel:+2349054667181">+234 905 466
+                            7181</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@wcpinitiative.org</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social rounded-circle" href="https://x.com/Yemanjaci"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle"
+                            href="https://www.facebook.com/profile.php?id=61566401709403"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle"
+                            href="https://www.linkedin.com/company/yemanja-cancer-care-initiative-inc"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Services</h5>
+                    <a class="btn btn-link" href="../service/">Breast Cancer Screening</a>
+                    <a class="btn btn-link" href="../service/">Cervical Cancer Screening</a>
+                    <a class="btn btn-link" href="../service">Human papillomavirus Screening</a>
+                    <a class="btn btn-link" href="../support-services">Education</a>
+                    <a class="btn btn-link" href="../support-services">Partnership</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="../about">About Us</a>
+                    <a class="btn btn-link" href="../contact">Contact Us</a>
+                    <a class="btn btn-link" href="../service">Our Services</a>
+                    <a class="btn btn-link" href="../contact">Terms & Condition</a>
+                    <a class="btn btn-link" href="../support-services">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Subscribe to get latest update from us.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" id="newsletteremail"
+                            placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2 "
+                            id="newsletterbtn">SignUp</button>
+                        <small id="newslettererror" style="color: rgb(255, 213, 221); text-align: center;"></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">WCPInitiative.org</a>, All Right Reserved.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/tempusdominus/js/moment.min.js"></script>
+    <script src="../lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+    <script src="../js/newsletter.js"></script>
+    <script src="../js/appointment.js"></script>
+</body>
+
+</html>

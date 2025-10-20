@@ -19,6 +19,7 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.8.2",
     "nodemailer": "^6.8.0",
-    "paystack": "^2.0.1"
+    "paystack": "^2.0.1",
+    "resend": "^6.2.0"
   }
 }

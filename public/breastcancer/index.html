@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Women’s Cancer Prevention Initiative </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+     <link href="../img/favicon.png" rel="icon">
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- Libraries Stylesheet -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousoiel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>62, Adebola Street, Surulere,Lagos, Lagos, Nigeria</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="fa fa-envelope text-primary me-2"></small>
+                    <small> <a href="mailto:info@wcpinitiative.org">info@wcpinitiative.org</a></small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-square text-primary me-2"></small>
+                    <small> <a href="tel:+2349054667181">+234 905 466 7181</a></small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
+                        href="https://www.facebook.com/profile.php?id=61566401709403"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
+                        href=" https://x.com/Yemanjaci"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0"
+                        href="https://www.instagram.com/yemanjacancercareinitiative"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Topbar End -->
+
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="../" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0 text-primary">
+                <img src="../img/icons/logo.png" style="width: 60px; " alt="logo" srcset="">
+                <small> WCPInitiative</small>
+            </h1>
+
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="../" class="nav-item nav-link ">Home</a>
+                <a href="../breastcancer" class="nav-item nav-link active">Breast Cancer</a>
+                <a href="../programs" class="nav-item nav-link ">Cervical Cancer</a>
+                <a href="../support-services" class="nav-item nav-link">Support Services</a>
+
+                <!-- <a href="service" class="nav-item nav-link">Program Initiatives</a> -->
+                <a href="../about/" class="nav-item nav-link ">About Us</a>
+                <!-- <a href="contact/" class="nav-item nav-link"></a> -->
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+
+                        <a href="testimonial" class="dropdown-item">Testimonial</a>
+                        <a href="blog_news" class="dropdown-item">Blog & News</a>
+                    </div>
+
+
+                </div> -->
+            </div>
+            <a href="../contact" class="btn-primary"
+                style="padding: 5px; text-decoration: none; border: 4px double pink;">Get Involved</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-headerr py-5 mb-5 wow fadeIn about-banner" data-wow-delay="0.1s" style="background-image: url(../img/bg/8.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        ">
+        <div class="container py-5 w-50">
+            <h2 class="display-3 text-white mb-3 animated slideInDown text-center ss "
+                style="font-size: 40px; text-shadow: 4px 4px 12px #db2777;">Breast
+                Cancer Early Detection Program</h2>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <h2></h2>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+
+    <main class="container-uh2k pt-3">
+
+
+        <section class="card-x7d eduOutreach-x92f" style=" padding: 0rem 0rem;">
+            <img src="../img/graphy-main.png" alt="" style="width: 100%;">
+            <!-- <h2>Education and Outreach</h2>
+                <p>Lack of health awareness and education has been identified as some of the main factors leading to
+                    increased mortality from breast cancer and cervical cancer. Women’s Cancer Prevention Initiative  is
+                    therefore
+                    working with local health care providers, faith-based organizations, and community leaders to
+                    increase
+                    awareness about breast cancer and cervical cancer.
+
+                    We provide culturally appropriate messages about the importance of early detection and prevention to
+                    reduce mortality from these diseases in Nigeria. Our initial efforts are focused on the Remo North
+                    Local
+                    Government Area (LGA) of Ogun State, Nigeria. </p> -->
+        </section>
+
+        <section class="card-x7dl capDev-bv28">
+            <h1 class="text-center m-3">Overview</h1>
+            <p>
+            <ul>
+                <li>
+
+                    <p> In Nigeria, despite an incidence rate that is lower than in Western countries, breast cancer
+                        mortality
+                        increased by 224%, between 1990 and 2019 compared to the US where it decreased by 58% during the
+                        same
+                        interval.(Ref)​
+                    </p>
+                </li>
+
+                <li>
+
+                    <p> The steadily increasing mortality rate in Nigeria (and her neighbors in sub-Saharan Africa) is
+                        due to
+                        increased incidence1, lack of early detection programs, and therefore late-stage presentation of
+                        the
+                        disease, with less likelihood for cure.​
+                    </p>
+                </li>
+                <li>
+
+                    <p> Mammographic screening is the only proven effective approach for early detection of breast
+                        cancer, yet
+                        most women in sub-Saharan Africa do not have access to mammography.​
+                    </p>
+                </li>
+            </ul>
+
+
+
+
+            </p>
+
+        </section>
+
+
+
+
+
+    </main>
+
+    <main class="container-uh2 py-5">
+        <div style="display: flex; justify-content: center;">
+            <img src="../img/popu-main.webp" style="" id="tisia" alt="">
+        </div>
+    </main>
+    <style>
+        #tisia {
+            width: 70%;
+        }
+
+        @media screen and (max-width:990px) {
+            #tisia {
+                width: 90%;
+            }
+
+        }
+    </style>
+
+
+
+
+    <div style="">
+        <section class="card-x7dl eduOutreach-x92f mb-5" id="fere" style="">
+            <h1 class="text-center py-3">Problem Statement: Access to Mammography</h1>
+            <ul class="fancy-list">
+                <li>
+                    <i class="fas fa-money-bill-wave"></i>
+                    <p>Annual screening mammograms are generally unaffordable in resource-constrained countries in
+                        sub-Saharan Africa.</p>
+                </li>
+                <li>
+                    <i class="fas fa-hospital-user"></i>
+                    <p>Improved access to screening mammography will reduce the proportion of women presenting with
+                        advanced breast cancer and reduce the mortality from the disease.</p>
+                </li>
+                <li>
+                    <i class="fas fa-brain"></i>
+                    <p>Deep learning algorithms developed from large databases of mammograms in advanced countries have
+                        recently shown that women at high risk can be identified after a single screening mammogram.
+                        Thus, screening frequency can be adjusted by risk, providing a cost-effective approach to
+                        mammography for resource-poor settings.</p>
+                </li>
+                <li>
+                    <i class="fas fa-database"></i>
+                    <p>However, mammographic profiles of Nigerian women with which to train these models are lacking.
+                    </p>
+                </li>
+            </ul>
+            <p class="text-center py-3"><strong class="text-center"> WCPI's solution is to generate, for the first time,
+                    such a dataset</strong></p>
+        </section>
+
+    </div>
+
+
+    <div class="bg-div" data-wow-delay="0.1s"></div> <!-- PLEASE DO NOT TOUCH THIS DIV IF YOU LOVE YOUR SANITY -->
+
+    <!-- Feature Start -->
+    <div class="bgdiv" style="background-color: var(--gray-50);  padding: 40px 10px 40px 10px;">
+        <div class="disdiv">
+            <div class="secion-header py-5">
+                <h1 class="section-title"></i>Who We Are</h1>
+
+                <p class="" style="font-size: 1.2rem;">
+                    Women’s Cancer Prevention Initiative is a nonprofit organization focused on saving the lives of
+                    women
+                    and
+                    reducing the burden of advanced breast and cervical cancer in sub-Saharan Africa.
+                </p>
+
+            </div>
+
+            <div class="">
+                <h1 class="section-title text-center py-3"><i class="fas fa-bullseye icon"></i>Our Approach</h1>
+
+                <div class="approach-grid">
+                    <div class="card">
+                        <h3><i class="fas fa-microscope icon"></i>Screening and Early Diagnosis</h3>
+                        <p>In the first 2 years, utilizing our mobile mammography service, we will screen a
+                            cross-section of
+                            <span class="highlight">70,000 women</span> in the <span class="highlight">6 Nigerian
+                                geopolitical
+                                zones</span>. Participants will undergo repeat mammography every <span
+                                class="highlight">1.5
+                                to
+                                2 years</span> for a <span class="highlight">6-year longitudinal study</span>.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fas fa-heartbeat icon"></i>Immediate Benefit: Timely Treatment</h3>
+                        <p>Women diagnosed with breast cancer (after ultrasound and biopsy) will be referred to
+                            facilities
+                            for
+                            treatment based on international guidelines. We anticipate up to <span class="highlight">300
+                                women</span> will need treatment during the project.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fas fa-chart-line icon"></i>Long-Term Benefit: Risk Prediction</h3>
+                        <p>Data collected will be used to train deep learning algorithms for risk prediction from their
+                            initial
+                            screening mammogram. <br> <br> This tool will provide the foundation for a cost-effective
+                            public
+                            health measure to reduce breast cancer mortality
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="bgdiv" style="  padding: 40px 10px 40px 10px;">
+
+        <main class="container-uh2k pt-3">
+            <section class="card-x7d eduOutreach-x92f">
+                <img src="../img/chart.webp" style="width: 100%;">
+
+            </section>
+
+            <section class="card-x7dl capDev-bv28">
+                <h2 style="color: #1B2C51;">Laying a Foundation: WCPI's Pilot Study</h2>
+                <ul>
+                    <li>
+
+                        <p> We have conducted a feasibility pilot study using a single digital mobile mammography
+                            machine in Lagos
+                            state​
+                        </p>
+                    </li>
+
+                    <li>
+
+                        <p> We have learnt from our early experience with stationary equipment at collaborating
+                            diagnostic
+                            facilities in Lagos and Abuja that taking our service to the people with a mobile unit is
+                            essential to
+                            achieve meaningful coverage and ensure image quality.​
+                        </p>
+                    </li>
+                    <li>
+
+                        <p>The figure at left illustrates the enrollment rate achieved with our single mobile instrument
+                            since its
+                            introduction in May 2024, increasing to our current, sustainable screening rate of <span
+                                class="highlight">~700
+                                women per month​</span>
+                        </p>
+                    </li>
+                </ul>
+
+
+
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- <div class="bgdiv" style="  padding: 40px 10px 40px 10px;">
+        <h1 class="section-title text-center py-3"><i class="fas fa-gear icon"></i>Strategic Plan</h1>
+        <main class="container-uh2k pt-3">
+            <section class="card-x7dl eduOutreach-x92f">
+                <h2 class="" style="color: #1B2C51;">Short-term Term Goals (2 years)</h2>
+                <p class="mt-2">
+                    <strong class="py- highlight">SCALE​</strong> <br> <br>
+
+                    Expand the number of mobile mammography units from current single instrument to at least one machine
+                    in each of the <span class="highlight">6 geopolitical zones</span> within Nigeria, to obtain
+                    mammograms from <span class="highlight">~70,000 -100,000
+                        women​</span>
+                </p>
+                <p class="mt-5">
+                    <strong class="py-3 highlight mt-5"> COLLABORATE AND TREAT​</strong> <br> <br>
+
+
+
+                    Continue our partnership with Lagos University Teaching hospital (and expand this to other academic
+                    cancer centers in Nigeria) for treatment referral according to international guidelines. Provision
+                    of funds for treatment will be from the Vulnerable Persons Program of the Nigerian National Health
+                    Insurance Scheme.​
+                </p>
+            </section>
+
+            <section class="card-x7dl capDev-bv28">
+                <h2 style="color: #1B2C51;">Long-term Goals (3 to 6 years)​</h2>
+                <p class="mt-2">
+                    <strong class="py- highlight">﻿ANALYZE AND IMPLEMENT​</strong> <br> <br>
+
+                <p> Initiate the prospective longitudinal part of the study to acquire sequential mammograms to be used
+                    in predictive model development.​</p>
+
+                <p>Partner with US academic groups at the forefront of AI in breast imaging to train a predictive model
+                    for breast cancer risk in Nigerian women​</p>
+
+                <p>
+                    Work with the Nigerian Federal Government to initiate the development of public health
+                    implementation plan utilizing our risk model.​
+                </p>
+                </p>
+
+
+
+
+
+            </section>
+
+        </main>
+
+    </div> -->
+
+    <div style="background-color: var(--gray-50);">
+
+
+        <section class="wcpi-carousel-wrapper">
+            <h2 class="wcpi-carousel-title">Our Trusted Partners</h2>
+            <p style="padding-bottom: 40px; text-align: center;">We are proud to have worked with esteemed
+                institutions such as:</p>
+
+            <div class="wcpi-carousel-track">
+                <div class="wcpi-carousel-item">
+                    <img src="../img/echo-logo.jpg" alt="ECHO">
+
+                </div>
+                <div class="wcpi-carousel-item">
+                    <img src="../img/ogun.png" alt="OGUN">
+
+                </div>
+                <div class="wcpi-carousel-item">
+                    <img src="../img/partners/nicract.png" alt="NICRAT">
+
+                </div>
+                <div class="wcpi-carousel-item">
+                    <img src="../img/partners/chai.png" alt="CHAI">
+                </div>
+                <div class="wcpi-carousel-item">
+                    <img src="../img/partners/lagosstate.jpg" alt="Lagos MOH">
+                </div>
+                <div class="wcpi-carousel-item">
+                    <img src="../img/partners/luthnew.png" alt="LUTH">
+                </div>
+                <div class="wcpi-carousel-item">
+                    <img src="../img/partners/bis.png" alt="Breast Imaging Society">
+                </div>
+                <!-- <div class="wcpi-carousel-item">
+                    <span style="text-align: center;">
+                        <i class="fas fa-praying-hands" style="font-size: 50px; color: #db2777;"></i>
+                        <p style="text-align: center;">Faith-based organizations and other NGOs</p>
+                    </span>
+
+
+                </div> -->
+
+                <!-- Duplicate for smooth loop -->
+                <div class="wcpi-carousel-item">
+                    <img src="../img/echo-logo.jpg" alt="ECHO">
+
+                </div>
+                <div class="wcpi-carousel-item">
+                    <img src="../img/ogun.png" alt="OGUN">
+
+                </div>
+                <div class="wcpi-carousel-item">
+                    <img src="../img/partners/nicract.png" alt="NICRAT">
+                </div>
+                <div class="wcpi-carousel-item">
+                    <img src="../img/partners/chai.png" alt="CHAI">
+                </div>
+                <div class="wcpi-carousel-item">
+                    <img src="../img/partners/lagosstate.jpg" alt="Lagos MOH">
+                </div>
+                <div class="wcpi-carousel-item">
+                    <img src="../img/partners/luthnew.png" alt="LUTH">
+                </div>
+                <div class="wcpi-carousel-item">
+                    <img src="../img/partners/bis.png" alt="Breast Imaging Society">
+                </div>
+                <!-- <div class="wcpi-carousel-item"
+                    style="display: flex; flex-wrap: wrap; flex-direction: column !important; ">
+                    <i class="fas fa-praying-hands" style="font-size: 48px; color: #f78fb3;"></i>
+                    >
+                </div> -->
+            </div>
+            <p style="" id="partu"> <strong style="text-align: center;">
+                    <h2 class="text-center">Our Collaborators</h2>
+
+                    <p class="text-center"> National Institute for Cancer Research and Treatment (NICRAT) in Nigeria​
+                    </p>
+
+                    <p>Clinton Health Access Initiative (CHAI)​</p>
+
+                    <p>Lagos State Ministry of Health​</p>
+
+                    <p>Lagos University Teaching Hospital​</p>
+
+                    <p> Breast Imaging Society of Nigeria​</p>
+
+                    <p> Faith-based organizations and other NGOs​</p>
+
+                    <p> Cancer advocacy groups in Nigeria</p>
+                </strong> </p>
+
+        </section>
+    </div>
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt- pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>14, Modupe Street, Off Fola Agoro
+                        Shomolu. Lagos, Nigeria</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i> <a href="tel:+2349054667181"
+                            style="color: white; text-decoration: none;">+234 905
+                            466
+                            7181</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:info@wcpinitiative.org"
+                            style="color: white; text-decoration: none;">info@wcpinitiative.org</a> </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social rounded-circle"
+                            href=" https://x.com/WCPInitiative?t=2rmFVZueC_gqoNXnR5k8dQ&s=09"><i
+                                class="fab fa-twitter"></i></a>
+
+                        <a class="btn btn-outline-light btn-social rounded-circle"
+                            href="https://web.facebook.com/profile.php?id=61577016412100"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle"
+                            href=" https://www.instagram.com/wcpinitiative?igsh=MWFwM3IxN212MG94dg=="><i
+                                class=" fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle"
+                            href=" https://www.linkedin.com/showcase/women-cancer-prevention-initiative"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Services</h5>
+                    <a class="btn btn-link" href="../service/">Breast Cancer Screening</a>
+                    <a class="btn btn-link" href="../service/">Cervical Cancer Screening</a>
+
+                    <a class="btn btn-link" href="../education/">Education</a>
+                    <a class="btn btn-link" href="../partnership/">Partnership</a>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="../about">About Us</a>
+                    <a class="btn btn-link" href="../contact">Contact Us</a>
+                    <a class="btn btn-link" href="../service">Our Services</a>
+                    <a class="btn btn-link" href="../support-services">Support</a>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Subscribe to get latest update from us.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" id="newsletteremail"
+                            placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2 "
+                            id="newsletterbtn">SignUp</button>
+                        <small id="newslettererror" style="color: rgb(255, 213, 221); text-align: center;"></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">WCPInitiative.org</a>, All Right Reserved.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <style>
+        .container-uh2k {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .card-x7dl {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            padding: 1.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .card-x7dl:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-x7dl h2 {
+            color: #e91e63;
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #f8bbd0;
+            display: inline-block;
+        }
+
+        .card-x7dl p {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        .highlight-80-gs98,
+        .highlight-3years-qp22,
+        .highlight-age9-vk16,
+        .highlight-age14-jr77 {
+            color: #e91e63;
+            font-weight: bold;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .container-uh2k {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/tempusdominus/js/moment.min.js"></script>
+    <script src="../lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

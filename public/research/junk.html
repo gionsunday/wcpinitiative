@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision Roadmap</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .vision-section-vbd123 {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .vision-section-vbd123 h2 {
+      font-size: 2rem;
+      color: #c30052;
+      margin-bottom: 1rem;
+    }
+
+    .vision-intro-vbd123 {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .vision-phase-title-vbd123 {
+      font-size: 1.4rem;
+      margin: 2rem 0 1rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .roadmap-container-vbd123 {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      position: relative;
+    }
+
+    @media (min-width: 768px) {
+      .roadmap-container-vbd123 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3rem;
+      }
+    }
+
+    .roadmap-item-vbd123 {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      position: relative;
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .roadmap-item-vbd123:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -1rem;
+      width: 2rem;
+      height: 2rem;
+      background: #c30052;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+
+    .roadmap-item-vbd123:first-child:before {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .roadmap-item-vbd123:before {
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 1rem;
+        height: 1rem;
+        width: 1rem;
+      }
+
+      .roadmap-item-vbd123:first-child:before {
+        display: block;
+        content: '';
+        margin-top: -1rem;
+      }
+    }
+
+    .roadmap-item-vbd123 h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .roadmap-item-vbd123 p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    .roadmap-item-vbd123 i {
+      font-size: 2rem;
+      color: #c30052;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="vision-section-vbd123">
+    <h2><i class="fas fa-lightbulb"></i> A Vision Built on Data</h2>
+    <p class="vision-intro-vbd123">
+      Our mobile screening model isn’t just a service—it’s a research-backed strategy designed to scale. 
+      What we’ve learned has confirmed that if we want to reach more Nigerian women, especially those in rural 
+      or underserved areas, we must stay mobile, community-rooted, and data-driven.
+    </p>
+    <p class="vision-intro-vbd123">And this is only the beginning.</p>
+
+    <div class="vision-phase-title-vbd123">
+      <i class="fas fa-road"></i> We are now moving toward the next phase of our research journey:
+    </div>
+    <div class="roadmap-container-vbd123">
+      <div class="roadmap-item-vbd123">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Geopolitical Zones</h3>
+        <p>Expand our mobile screening program to all six geopolitical zones of Nigeria.</p>
+      </div>
+      <div class="roadmap-item-vbd123">
+        <i class="fas fa-chart-line"></i>
+        <h3>Data Collection</h3>
+        <p>Scale up data collection to reach 70,000–100,000 women across the country.</p>
+      </div>
+      <div class="roadmap-item-vbd123">
+        <i class="fas fa-search"></i>
+        <h3>Longitudinal Study</h3>
+        <p>Launch a longitudinal study to track sequential mammograms and develop AI models for breast cancer risk.</p>
+      </div>
+      <div class="roadmap-item-vbd123">
+        <i class="fas fa-university"></i>
+        <h3>Academic Partnerships</h3>
+        <p>Partner with U.S. academic institutions to train AI models using localized data.</p>
+      </div>
+      <div class="roadmap-item-vbd123">
+        <i class="fas fa-handshake"></i>
+        <h3>National Plan</h3>
+        <p>Collaborate with the Nigerian Government to create a national implementation plan.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

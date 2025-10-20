@@ -29,7 +29,7 @@ window.addEventListener("load",  ()=>{
                 subject:subjectInput.value,
                 message: messageInput.value
                })
-               console.log(data)
+            //    console.log(data)
               
                ContactBtn.textContent = "Message Sent!"
                ContactBtn.style.backgroundColor = "#d63384" 

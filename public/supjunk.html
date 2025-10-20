@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WCPI Contact Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    .wcpi-contact {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .wcpi-contact h2 {
+      text-align: center;
+      font-size: 2.4rem;
+      color: #c2185b;
+      margin-bottom: 10px;
+    }
+
+    .wcpi-contact p.intro {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 50px;
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    .wcpi-info-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+
+    .wcpi-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      width: 200px;
+      margin: auto;
+      transition: transform 0.3s;
+    }
+
+    .wcpi-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .wcpi-card i {
+      font-size: 1.8rem;
+      color: #c2185b;
+      margin-bottom: 10px;
+    }
+
+    .wcpi-card a, .wcpi-card span {
+      color: #333;
+      font-size: 0.95rem;
+      text-decoration: none;
+      line-height: 1.4;
+    }
+
+    .wcpi-social {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .wcpi-social a {
+      font-size: 1.2rem;
+      color: #c2185b;
+      text-decoration: none;
+    }
+
+    .wcpi-form-map-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .wcpi-contact-form,
+    .wcpi-map {
+      flex: 1 1 500px;
+      min-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      background: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wcpi-contact-form {
+      padding: 30px;
+    }
+
+    .wcpi-contact-form h3 {
+      font-size: 1.5rem;
+      color: #c2185b;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .wcpi-contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      flex-grow: 1;
+    }
+
+    .wcpi-contact-form .name-email-row {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .wcpi-contact-form .name-email-row input {
+      flex: 1 1 48%;
+    }
+
+    .wcpi-contact-form input,
+    .wcpi-contact-form textarea {
+  
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .wcpi-contact-form button {
+      padding: 12px;
+      background-color: #c2185b;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    .wcpi-contact-form button:hover {
+      background-color: #a10f47;
+    }
+
+    .wcpi-map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      flex-grow: 1;
+    }
+
+    @media (max-width: 768px) {
+      .wcpi-form-map-row {
+        flex-direction: column;
+      }
+
+      .wcpi-card {
+        width: 100%;
+        height: auto;
+      }
+
+      .wcpi-map,
+      .wcpi-contact-form {
+        height: auto;
+      }
+
+      .wcpi-contact-form .name-email-row {
+        flex-direction: column;
+      }
+
+      .wcpi-contact-form .name-email-row input {
+        flex: 1 1 100%;
+      }
+    }
+
+    .wcpi-map,
+    .wcpi-contact-form {
+      min-height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="wcpi-contact">
+    <h2>Contact Us</h2>
+    <p class="intro">
+      Are you interested in donating, training with us, or partnering — or do you believe your community needs a screening outreach? Contact us—we’re ready to make an impact together.
+    </p>
+
+    <div class="wcpi-info-cards">
+      <div class="wcpi-card">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>14, Modupe Street,<br>Off Fola Agoro,<br>Shomolu, Lagos</span>
+      </div>
+      <div class="wcpi-card">
+        <i class="fas fa-phone-alt"></i>
+        <a href="tel:+2349054667181">+234 905 466 7181</a><br>
+        <a href="tel:+2347049733505">+234 704 973 3505</a>
+      </div>
+      <div class="wcpi-card">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:info@wcpinitiative.org">info@wcpinitiative.org</a><br>
+        <a href="mailto:womencancerpi@gmail.com">womencancerpi@gmail.com</a>
+      </div>
+      <div class="wcpi-card">
+        <i class="fas fa-hashtag"></i>
+        <span>@wcoi</span>
+      </div>
+      <div class="wcpi-card">
+        <i class="fas fa-share-alt"></i>
+        <div class="wcpi-social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wcpi-form-map-row">
+      <div class="wcpi-contact-form">
+        <h3>Send a Message</h3>
+        <form>
+          <div class="name-email-row">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <input type="text" name="subject" placeholder="Subject" />
+          <textarea name="message" rows="5" placeholder="Leave a message here" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="wcpi-map">
+        <iframe
+          src="https://www.google.com/maps?q=14+Modupe+Street,+Off+Fola+Agoro,+Shomolu,+Lagos,+Nigeria&output=embed"
+          loading="lazy"
+          allowfullscreen=""
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

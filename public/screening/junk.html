@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Screening Journey - WCPI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .screening-section {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 60px auto;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .screening-text {
+      flex: 1;
+      padding: 50px 40px;
+    }
+
+    .screening-text h2 {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      color: #c2185b;
+    }
+
+    .screening-text p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .screening-image {
+      flex: 1;
+      background-image: url('https://images.unsplash.com/photo-1606248897732-2d2c23ab8f6d?auto=format&fit=crop&w=800&q=80');
+      background-size: cover;
+      background-position: center;
+      min-height: 400px;
+      position: relative;
+    }
+
+    .screening-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 900px) {
+      .screening-section {
+        flex-direction: column;
+      }
+
+      .screening-image {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="screening-section">
+    <div class="screening-text">
+      <h2>Our Screening Journey: From Clinic to Community</h2>
+      <p>
+        No woman should have to travel miles or pay high fees for a lifesaving checkup. That’s why WCPI’s outreach teams offer mammograms and cervical screenings in villages, markets, schools, and community centers across Nigeria.
+      </p>
+      <p>
+        We treat every visit as an opportunity—not just to test, but to listen, support, and guide each woman through her health journey. We understand the challenges—long distances, busy schedules, and high costs. So we bring the screening to you—no referral, no stress, no payment needed.
+      </p>
+    </div>
+    <div class="screening-image"></div>
+  </section>
+
+</body>
+</html>

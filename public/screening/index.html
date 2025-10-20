@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Women’s Cancer Prevention Initiative </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="../img/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/fff66ab3f7.js" crossorigin="anonymous"></script>
+
+    <!-- Libraries Stylesheet -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start 
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>62, Adebola Street, Surulere,Lagos, Lagos, Nigeria</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="fa fa-envelope text-primary me-2"></small>
+                    <small> <a href="mailto:info@wcpinitiative.org">info@wcpinitiative.org</a></small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-square text-primary me-2"></small>
+                    <small> <a href="tel:+2349054667181">+234 905 466 7181</a></small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
+                        href="https://www.facebook.com/profile.php?id=61566401709403"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
+                        href=" https://x.com/Yemanjaci"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0"
+                        href="https://www.instagram.com/yemanjacancercareinitiative"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="../" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0 text-primary">
+                <img src="../img/icons/logo.png" style="width: 60px; " alt="logo" srcset="">
+                <small> WCPInitiative</small>
+            </h1>
+
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="../" class="nav-item nav-link ">Home</a>
+                <a href="../breastcancer" class="nav-item nav-link">Breast Cancer</a>
+                <a href="../programs" class="nav-item nav-link">Cervical Cancer</a>
+                <a href="../support-services" class="nav-item nav-link active">Support Services</a>
+
+                <!-- <a href="service" class="nav-item nav-link">Program Initiatives</a> -->
+                <a href="../about/" class="nav-item nav-link ">About Us</a>
+                <!-- <a href="contact/" class="nav-item nav-link"></a> -->
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+
+                        <a href="testimonial" class="dropdown-item">Testimonial</a>
+                        <a href="blog_news" class="dropdown-item">Blog & News</a>
+                    </div>
+
+
+                </div> -->
+            </div>
+            <a href="../contact" class="btn-primary"
+                style="padding: 5px; text-decoration: none; border: 4px double pink;">Get Involved</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-headerr py-5 mb-5 wow fadeIn about-banner" data-wow-delay="0.1s" style="background-image: url(../img/PIC/g9.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        ">
+        <div class="container py-5 w-50 text-center">
+            <!-- <h1 class="display-3 text-white mb-3 animated slideInDown text-center text-white">Support Services</h1> -->
+            <nav aria-label="breadcrumb animated slideInDown text-center text-white">
+
+                <h1 class="text-center text-white" style="text-shadow: 4px 4px 12px #db2777;"> <i
+                        class="fa-solid fa-stethoscope"></i>Screening</h1>
+                <h2 class="text-center text-white" style="text-shadow: 4px 4px 12px #db2777;">Screening with Heart: <br>
+                    WCPI’s Journey to Early Detection</h2>
+
+                <!-- <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">More</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Support Services</li> -->
+
+            </nav>
+            <h4 style="font-size: 40px; color: purple;" class="text-center text-white">↓</h4>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <div class="main-container">
+
+        <div class="container">
+            <section class="section-container">
+
+                <div class="screen " style="display: flex; flex-direction: column;   border-radius: 20px;">
+                    <i class="fas fa-venus text-center mb-3"
+                        style="text-align: center; align-self: center; font-size: 40px; background-color: #f78fb3; padding: 10px; border-radius: 40%; color: white;"></i>
+                    <h2> Empowering Women, One Screen at a Time</h2>
+                    <p>
+
+                        At the Women’s Cancer Prevention Initiative , we believe every woman deserves an easy, caring
+                        path to knowing her health status. Our screening programs bring together skilled nurses,
+                        friendly community health workers, and state-of-the-art equipment—right where you live—to make
+                        early detection simple and stress-free.
+
+                    </p>
+                </div>
+                <div class="screen screen-box" style="display: flex; flex-direction: column;  border-radius: 20px;">
+                    <i class="fas fa-compass text-center mb-3"
+                        style="text-align: center; align-self: center; font-size: 40px; background-color: #f78fb3; padding: 10px; border-radius: 40%; color: white;"></i>
+
+                    <h2> Our Screening Journey: From Clinic to Community</h2>
+                    <p>
+
+                        No woman should have to travel miles or pay high fees for a lifesaving checkup. That’s why
+                        WCPI’s outreach teams offer mammograms and cervical screenings in villages, markets, schools,
+                        and community centers across Nigeria. We treat every visit as an opportunity, not just to test,
+                        but to listen, support, and guide each woman through her health journey. We understand the
+                        challenges—long distances, busy schedules, and high costs. So we bring the screening to you– no
+                        referral, no stress, no payment needed.
+
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <hr
+            style="border: 0; height: 3px; background: linear-gradient(to right, #c56cf0, #f78fb3); border-radius: 5px; margin: 40px 0;">
+        <section class="infographic-section" style="background-color: var(--gray-50);">
+            <div class="infographic-wrapper">
+                <h3 class="pb-5 text-center" style="color: #1B2C51;">Impact by the Numbers</h3>
+                <div class="infographic-grid">
+
+                    <div class="infographic-card">
+                        <div class="infographic-icon"><i class="fas fa-users"></i></div>
+                        <div class="infographic-circle">7,000+</div>
+                        <div class="infographic-text">
+                            Women reached through national outreach programs across Nigeria.
+                        </div>
+                    </div>
+
+                    <div class="infographic-card">
+                        <div class="infographic-icon"><i class="fas fa-file-medical-alt"></i></div>
+                        <div class="infographic-circle">3,776</div>
+                        <div class="infographic-text">
+                            Participants in our pilot study completed in December 2024.
+                        </div>
+                    </div>
+
+                    <div class="infographic-card">
+                        <div class="infographic-icon"><i class="fas fa-truck-medical"></i></div>
+                        <div class="infographic-circle">2,836</div>
+                        <div class="infographic-text">
+                            Screenings done with our mobile mammography unit.
+                        </div>
+                    </div>
+
+                    <div class="infographic-card">
+                        <div class="infographic-icon"><i class="fas fa-calendar-check"></i></div>
+                        <div class="infographic-circle">700+/mo</div>
+                        <div class="infographic-text">
+                            Monthly screenings since May 2024 showing strong community trust.
+                        </div>
+                    </div>
+
+                    <div class="infographic-card">
+                        <div class="infographic-icon"><i class="fas fa-hand-holding-medical"></i></div>
+                        <div class="infographic-circle">3,500 </div>
+                        <div class="infographic-text">
+                            Women Screened and <strong class="highlight"> 72 treated </strong> with thermal coagulation
+                            for pre-cancer.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Start -->
+        <!-- <div class="container-fluid overflow-hidden my-5 px-lg-0">
+            <div class="container feature px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s"
+                        style="background-color: purple !important;">
+
+
+                        
+                        <div class="p-lg-5 ps-lg-0 p-4">
+
+                            <h1 class="text-white mb-4 ">Impact by the Numbers
+
+                            </h1>
+                            <p class="text-white mb-4 pb-2">7,000+ women were reached through our national outreach
+                                events, bringing screening services to urban and rural communities alike.
+
+                            </p>
+                            <p class="text-white mb-4 pb-2"> 3,776 participants enrolled in our pilot study (concluded
+                                December 2024), laying the
+                                groundwork for wider roll-out.</p>
+
+
+                            <p class="text-white mb-4 pb-2"> 2,836 screenings completed via our custom mobile
+                                mammography unit—no appointment needed,
+                                no travel hassles. </p>
+
+
+                            <p class="text-white mb-4 pb-2"> A sustainable rate of ~700 women screened every month since
+                                May 2024, demonstrating both
+                                demand and community trust.
+                            </p>
+
+                            <p class="text-white mb-4 pb-2"> 3,000+ women were provided with follow-up consultations,
+                                nutritional support, and
+                                referrals, ensuring care beyond the scan.</p>
+                            <div class="row g-4">
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-lightt"
+                                            style="width: 55px; height: 55px;">
+                                            <i class="fa fa-money text-primary"></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="text-white mb-2">Donate</p>
+                                            <h5 class="text-white mb-0">Money</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-lightt"
+                                            style="width: 55px; height: 55px;">
+                                            <i class="fa fa-check text-primary"></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="text-white mb-2">Donate</p>
+                                            <h5 class="text-white mb-0">Resources</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-lightt"
+                                            style="width: 55px; height: 55px;">
+                                            <i class="fa fa-comment-medical text-primary"></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="text-white mb-2">Positive</p>
+                                            <h5 class="text-white mb-0">Consultation</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-lightt"
+                                            style="width: 55px; height: 55px;">
+                                            <i class="fa fa-user-plus text-primary"></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="text-white mb-2">Recommendation &</p>
+                                            <h5 class="text-white mb-0">Referral</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div> 
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute img-fluid w-100 h-100" src="../img/PIC/g29.jpg"
+                                style="object-fit: cover;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        Feature End -->
+
+
+        <!-- <section class="text-center trusted-partner">
+            <div class="container">
+                
+            </div>
+
+
+        </section> -->
+
+
+
+        <div class="container">
+            <section class="section-container">
+                <div>
+
+                    <img src="../img/PIC/g33.jpg" alt="Collaboration in Action">
+                </div>
+                <div>
+
+                    <h2>Mobile Unit Success: Bringing Care to Your Doorstep</h2>
+                    <p>
+                        Our specially adapted screening van isn’t just a vehicle—it’s a moving clinic staffed by warm,
+                        professional teams. Whether in remote towns or bustling suburbs, we park in central spots,
+                        invite women in for quick, private examinations, and send every image straight to our
+                        radiologists for immediate review. The result? Faster appointments, clearer results, and lives
+                        changed because of early action.
+
+                    </p>
+                </div>
+
+            </section>
+        </div>
+
+        <hr
+            style="border: 0; height: 3px; background: linear-gradient(to right, #c56cf0, #f78fb3); border-radius: 5px; margin: 40px 0;">
+
+
+
+        <div class="container" style="background-color: var(--gray-50);">
+            <section class="section-container">
+
+                <div>
+                    <div style="display: flex; justify-content: space-between; width: 100%;">
+
+                        </i>
+                        <h2>Looking Ahead: Scaling for Greater Reach</h2>
+                    </div>
+
+                    <p>With proof of concept in hand, WCPI is ready to expand. In the next two years, we aim to deploy
+                        mobile units in each of Nigeria’s six geopolitical zones, screening 70,000–100,000 women
+                        annually. This scale-up will deepen our data, refine our programs, and create replicable models
+                        for governments and grant-makers invested in Women health equity.</p>
+
+                </div>
+                <div
+                    style="background-color: purple; padding: 40px; border-radius: 20px; box-shadow: 2px 6px 10px rgba(202, 196, 196, 0.527);">
+                    <h4 class="text-white">Screen her today. <span style="color: #f78fb3;">Save her tomorrow.</span>
+                    </h4>
+                    <p class="text-white text-center">
+                        Join Us in Saving Lives <br>
+                        Support our next 10,000 screenings. Or come for your own.
+                        <br> <br>
+                        Contact us to learn more about upcoming screening events or to explore funding opportunities
+                        that will take WCPI’s initiatives further, faster.
+                    </p>
+                    <p>
+                        <strong><i class="fa-solid fa-envelope text-white"></i> For partnership inquiries, <a
+                                href="../contact/" style="color: pink;">contact
+                                us today</a>.</strong>
+                    </p>
+                </div>
+
+            </section>
+        </div>
+
+
+
+
+    </div>
+    </div>
+
+
+
+
+    <style>
+        @media screen and (min-width:900px) {
+            .my_row {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                padding-bottom: 2em;
+            }
+
+            .my_row .ql-container h3 {
+                text-align: center;
+                text-decoration: underline
+            }
+
+            .ql-container {
+                background-color: #0463FA;
+                width: 47%;
+                padding: 30px;
+                border-radius: 20px;
+                color: white;
+                box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.144);
+
+
+            }
+
+            .how_to {
+                margin: 15px;
+                background-color: rgb(255, 255, 255) !important;
+            }
+        }
+
+        @media screen and (max-width:800px) {
+            .my_row {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .my_row .ql-container h3 {
+                text-align: center;
+                text-decoration: underline
+            }
+
+            .ql-container {
+                background-color: #0463FA;
+                width: 100%;
+                padding: 30px;
+                border-radius: 20px;
+                margin-top: 30px;
+                box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.144);
+
+
+            }
+
+            .how_to {
+                margin-top: 20px;
+                background-color: rgb(255, 255, 255) !important;
+            }
+        }
+
+        .ql-editor p {
+            text-align: center;
+        }
+    </style>
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt- pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>14, Modupe Street, Off Fola Agoro
+                        Shomolu. Lagos, Nigeria</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i> <a href="tel:+2349054667181"
+                            style="color: white; text-decoration: none;">+234 905
+                            466
+                            7181</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:info@wcpinitiative.org"
+                            style="color: white; text-decoration: none;">info@wcpinitiative.org</a> </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social rounded-circle"
+                            href=" https://x.com/WCPInitiative?t=2rmFVZueC_gqoNXnR5k8dQ&s=09"><i
+                                class="fab fa-twitter"></i></a>
+
+                        <a class="btn btn-outline-light btn-social rounded-circle"
+                            href="https://web.facebook.com/profile.php?id=61577016412100"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle"
+                            href=" https://www.instagram.com/wcpinitiative?igsh=MWFwM3IxN212MG94dg=="><i
+                                class=" fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle"
+                            href=" https://www.linkedin.com/showcase/women-cancer-prevention-initiative"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Services</h5>
+                    <a class="btn btn-link" href="../service/">Breast Cancer Screening</a>
+                    <a class="btn btn-link" href="../service/">Cervical Cancer Screening</a>
+
+                    <a class="btn btn-link" href="../education/">Education</a>
+                    <a class="btn btn-link" href="../partnership/">Partnership</a>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="../about">About Us</a>
+                    <a class="btn btn-link" href="../contact">Contact Us</a>
+                    <a class="btn btn-link" href="../service">Our Services</a>
+                    <a class="btn btn-link" href="../support-services">Support</a>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Subscribe to get latest update from us.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" id="newsletteremail"
+                            placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2 "
+                            id="newsletterbtn">SignUp</button>
+                        <small id="newslettererror" style="color: rgb(255, 213, 221); text-align: center;"></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">WCPInitiative.org</a>, All Right Reserved.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/tempusdominus/js/moment.min.js"></script>
+    <script src="../lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+    <script src="../js/newsletter.js"></script>
+    <script src="../js/appointment.js"></script>
+</body>
+
+</html>

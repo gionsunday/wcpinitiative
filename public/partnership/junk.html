@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WCPI Partner Carousel</title>
+  <style>
+    .wcpi-carousel-wrapper {
+      overflow: hidden;
+      width: 100%;
+      padding: 40px 0;
+      background-color: #f9f9f9;
+    }
+
+    .wcpi-carousel-track {
+      display: flex;
+      gap: 40px;
+      width: max-content;
+      animation: wcpi-carousel-scroll 25s linear infinite;
+    }
+
+    .wcpi-carousel-item {
+      flex: 0 0 auto;
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .wcpi-carousel-item img {
+      width: 90%;
+      height: 90%;
+      object-fit: contain;
+    }
+
+    .wcpi-carousel-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    @keyframes wcpi-carousel-scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Responsive: Pause scroll on hover */
+    .wcpi-carousel-wrapper:hover .wcpi-carousel-track {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="wcpi-carousel-wrapper">
+    <h2 class="wcpi-carousel-title">Our Trusted Partners</h2>
+    <div class="wcpi-carousel-track">
+      <div class="wcpi-carousel-item">
+        <img src="../img/partners/nicract.png" alt="NICRAT">
+      </div>
+      <div class="wcpi-carousel-item">
+        <img src="../img/partners/chai.png" alt="CHAI">
+      </div>
+      <div class="wcpi-carousel-item">
+        <img src="../img/partners/lagosstate.jpg" alt="Lagos MOH">
+      </div>
+      <div class="wcpi-carousel-item">
+        <img src="../img/partners/luthnew.png" alt="LUTH">
+      </div>
+      <div class="wcpi-carousel-item">
+        <img src="../img/partners/bis.png" alt="Breast Imaging Society">
+      </div>
+      <div class="wcpi-carousel-item">
+        <i class="fas fa-praying-hands" style="font-size: 48px; color: #f78fb3;"></i>
+      </div>
+
+      <!-- Duplicate for smooth loop -->
+      <div class="wcpi-carousel-item">
+        <img src="../img/partners/nicract.png" alt="NICRAT">
+      </div>
+      <div class="wcpi-carousel-item">
+        <img src="../img/partners/chai.png" alt="CHAI">
+      </div>
+      <div class="wcpi-carousel-item">
+        <img src="../img/partners/lagosstate.jpg" alt="Lagos MOH">
+      </div>
+      <div class="wcpi-carousel-item">
+        <img src="../img/partners/luthnew.png" alt="LUTH">
+      </div>
+      <div class="wcpi-carousel-item">
+        <img src="../img/partners/bis.png" alt="Breast Imaging Society">
+      </div>
+      <div class="wcpi-carousel-item">
+        <i class="fas fa-praying-hands" style="font-size: 48px; color: #f78fb3;"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+</body>
+</html>
