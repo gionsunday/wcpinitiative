@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Newsletter Admin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fafb;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #eb2577;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        button {
+            background-color: #eb2577;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #d81d84;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Table Page */
+        .table-page {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            width: 100%;
+        }
+
+        table {
+            width: 100%;
+            max-width: 800px;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #eb2577;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f5f9;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            margin-top: 10px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .actions button {
+            width: auto;
+            padding: 10px 20px;
+        }
+
+        @media print {
+            .actions {
+                display: none;
+            }
+
+            body {
+                background: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Login Form -->
+    <div class="container" id="loginPage">
+        <h2>Admin Login</h2>
+        <div class="error" id="errorMsg"></div>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Table Page -->
+    <div class="table-page" id="tablePage">
+        <h2>Newsletter Subscribers</h2>
+
+        <div class="actions">
+            <button onclick="window.print()">Print Table</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+        <table id="emailTable">
+            <thead>
+                <tr>
+                    <th>N/S</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td colspan="3" style="text-align:center;">Loading...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const AUTH_EMAIL = "info@wcpinitiative.org";   
+        const AUTH_PASSWORD = "WCPI@admin1";            
+
+        // Handle login
+        function login() {
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const errorMsg = document.getElementById("errorMsg");
+
+            if (email === AUTH_EMAIL && password === AUTH_PASSWORD) {
+                sessionStorage.setItem("loggedIn", "true");
+                showTablePage();
+            } else {
+                errorMsg.textContent = "Invalid email or password!";
+            }
+        }
+
+        function logout() {
+            sessionStorage.removeItem("loggedIn");
+            document.getElementById("tablePage").style.display = "none";
+            document.getElementById("loginPage").style.display = "block";
+        }
+
+        function showTablePage() {
+            document.getElementById("loginPage").style.display = "none";
+            document.getElementById("tablePage").style.display = "flex";
+            loadEmails();
+        }
+
+        async function loadEmails() {
+            try {
+                const res = await axios.get('/wcpi/api/newsletter/emails');
+
+                const data = await res.data.emails;
+                const tbody = document.getElementById('tableBody');
+                tbody.innerHTML = '';
+                let _name = ""
+
+                if (data.length === 0) {
+                    tbody.innerHTML = `<tr><td colspan="3" style="text-align:center;">No subscribers found</td></tr>`;
+                    return;
+                }
+
+                console.log("Response from server:", data); // Debug log
+                data.forEach((item, index) => {
+                    if(item.name.toLowerCase() ==="there" || item.name === ""){
+                        _name = "N/A"
+                    }
+                    else{
+                        _name = item.name
+                    }
+                tbody.insertAdjacentHTML('beforeend', `
+            <tr>
+              <td>${index + 1}</td>
+              <td>${_name}</td>
+              <td>${item.email}</td>
+            </tr>
+          `);
+                });
+            } catch (error) {
+                document.getElementById('tableBody').innerHTML =
+                    `<tr><td colspan="3" style="text-align:center; color:red;">Error loading data</td></tr>`;
+            }
+        }
+
+        // Auto login check
+        window.onload = function () {
+            if (sessionStorage.getItem("loggedIn") === "true") {
+                showTablePage();
+            }
+        };
+    </script>
+
+</body>
+
+</html>

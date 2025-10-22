@@ -7,6 +7,19 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 const currentYear = new Date().getFullYear();
 
+const getEmails = async (req, res) => { 
+  try {
+    const emails = await Newsletter.find({});
+    console.log("Fetched Emails:", emails);
+    res.status(StatusCodes.OK).json({ emails });
+  } catch (error) {
+    // console.error("Get Emails error:", error);
+    res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+      error: error.message || "Something went wrong"
+    });
+  }
+}
+
 const newsLetter = async (req, res) => {
   try {
     const { name, email, subject, message } = req.body;
@@ -126,4 +139,4 @@ const newsLetter = async (req, res) => {
   }
 };
 
-module.exports = { newsLetter };
+module.exports = { newsLetter, getEmails };
