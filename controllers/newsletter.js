@@ -38,7 +38,18 @@ const newsLetter = async (req, res) => {
           <body>
             <div class="email-container">
               <div class="header">
-                <div><img style="width: 100px;" src="https://wcpinitiative.org/img/icons/logo.png" /></div>
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" style="text-align:center;">
+  <tr>
+    <td align="center">
+      <img 
+        src="https://wcpinitiative.org/img/icons/logo.png" 
+        width="100" 
+        alt="WCPI Logo"
+        style="display:block; margin:0 auto;"
+      />
+    </td>
+  </tr>
+</table>
                 <div>New Subscriber</div>
               </div>
               <p>Subscriber: ${email}</p>
@@ -62,10 +73,18 @@ const newsLetter = async (req, res) => {
           <head> ... </head>
           <body>
             <div class="email-container">
-              <div class="header" style="text-align: center; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-                <div><img style="width: 100px;" src="https://wcpinitiative.org/img/icons/logo.png" /></div>
-                <div>Welcome!</div>
-              </div>
+            <table width="100%" cellspacing="0" cellpadding="0" border="0" style="text-align:center;">
+  <tr>
+    <td align="center">
+      <img 
+        src="https://wcpinitiative.org/img/icons/logo.png" 
+        width="100" 
+        alt="WCPI Logo"
+        style="display:block; margin:0 auto;"
+      />
+    </td>
+  </tr>
+</table>
               <p>Hello ${name},</p>
               <p>Thank you for subscribing to updates from the <strong>Women’s Cancer Prevention Initiative (WCPI)</strong>.</p>
               <p>By joining us, you’ll receive updates on:</p>
