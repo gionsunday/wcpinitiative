@@ -10,7 +10,7 @@ const currentYear = new Date().getFullYear();
 const getEmails = async (req, res) => { 
   try {
     const emails = await Newsletter.find({});
-    console.log("Fetched Emails:", emails);
+ 
     res.status(StatusCodes.OK).json({ emails });
   } catch (error) {
     // console.error("Get Emails error:", error);
