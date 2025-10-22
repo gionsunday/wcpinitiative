@@ -62,7 +62,7 @@ const newsLetter = async (req, res) => {
           <head> ... </head>
           <body>
             <div class="email-container">
-              <div class="header">
+              <div class="header" style="text-align: center; display:flex; flex-direction:column; align-items:center; justify-content:center;">
                 <div><img style="width: 100px;" src="https://wcpinitiative.org/img/icons/logo.png" /></div>
                 <div>Welcome!</div>
               </div>
