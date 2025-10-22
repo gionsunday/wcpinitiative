@@ -70,14 +70,17 @@ const newsLetter = async (req, res) => {
               <p>Thank you for subscribing to updates from the <strong>Women’s Cancer Prevention Initiative (WCPI)</strong>.</p>
               <p>By joining us, you’ll receive updates on:</p>
               <ul>
-                <li>Cancer prevention tips and educational resources</li>
-                <li>Screening programs and outreach activities</li>
-                <li>Ways you can support and get involved</li>
+               <b><li>Cancer prevention tips and educational resources</li></b> 
+               <b> <li>Screening programs and outreach activities</li></b>
+               <b><li>Ways you can support and get involved</li></b>
+                
               </ul>
               <p>Together, we can make early detection and prevention accessible to more women and families.</p>
+              <br/>
               <p style="text-align: center;">
                 <a href="https://wcpinitiative.org/" class="button" style="color:#fff;background:#db2777;padding:12px 25px;text-decoration:none;border-radius:5px;">Goto Website</a>
               </p>
+              <br/>
               <p>Please contact us directly at <a href="mailto:info@wcpinitiative.org" style="color:#0056b3;">info@wcpinitiative.org</a>.</p>
               <div class="footer">
                 &copy; ${currentYear} Women’s Cancer Prevention Initiative. <br> All rights reserved.
